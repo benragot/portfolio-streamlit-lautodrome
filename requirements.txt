@@ -31,3 +31,4 @@ termcolor
 #to make streamlit work
 tkinter
 turtle
+tk
