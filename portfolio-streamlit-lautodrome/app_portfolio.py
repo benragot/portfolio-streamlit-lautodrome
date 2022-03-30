@@ -27,5 +27,4 @@ def app():
 
     for key, value in dico_images_descriptions.items():
         st.image('images/portfolio_instagram/' + key,
-                 caption=value,
-                 width=750)
+                 caption=value)

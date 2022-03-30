@@ -23,14 +23,11 @@ def app():
                 lines = f.readlines()
                 dico_images_descriptions[images_name] = lines[0].split('#')[0]
 
-    a_random_image_name = list(dico_images_descriptions.keys())[random.randint(0,len(list(dico_images_descriptions.keys())))]
     if st.button('Click me to load randomly one of my paintings !'):
-        a_random_image_name = list(dico_images_descriptions.keys())[random.randint(0,len(list(dico_images_descriptions.keys())))]
+        a_random_image_name = list(dico_images_descriptions.keys())[random.randint(0,len(list(dico_images_descriptions.keys()))-1)]
         st.image('images/portfolio_instagram/' + a_random_image_name,
-                caption=dico_images_descriptions[a_random_image_name],
-                width=750)
+                caption=dico_images_descriptions[a_random_image_name])
     else:
-        a_random_image_name = list(dico_images_descriptions.keys())[random.randint(0,len(list(dico_images_descriptions.keys())))]
+        a_random_image_name = list(dico_images_descriptions.keys())[random.randint(0,len(list(dico_images_descriptions.keys()))-1)]
         st.image('images/portfolio_instagram/' + a_random_image_name,
-                caption=dico_images_descriptions[a_random_image_name],
-                width=750)
+                caption=dico_images_descriptions[a_random_image_name])
