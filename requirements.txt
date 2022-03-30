@@ -30,4 +30,3 @@ termcolor
 
 #to make streamlit work
 tk
-turtle
