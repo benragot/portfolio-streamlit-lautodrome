@@ -1,12 +1,12 @@
 import streamlit as st
 #import base64
-#import app_welcome
+import app_welcome
 import app_contact
 import app_portfolio
 import app_randomizer
 
 PAGES = {
-    #"Welcome": app_welcome,
+    "Welcome": app_welcome,
     "Portfolio": app_portfolio,
     "Randomize painting":app_randomizer,
     "Contact": app_contact,

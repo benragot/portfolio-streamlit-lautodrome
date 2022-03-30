@@ -24,7 +24,7 @@ def app():
                 dico_images_descriptions[images_name] = lines[0].split('#')[0]
 
     a_random_image_name = list(dico_images_descriptions.keys())[random.randint(0,len(list(dico_images_descriptions.keys())))]
-    if st.button('click me'):
+    if st.button('Click me to load randomly one of my paintings !'):
         a_random_image_name = list(dico_images_descriptions.keys())[random.randint(0,len(list(dico_images_descriptions.keys())))]
         st.image('images/portfolio_instagram/' + a_random_image_name,
                 caption=dico_images_descriptions[a_random_image_name],
