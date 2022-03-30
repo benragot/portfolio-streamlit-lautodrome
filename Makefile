@@ -40,6 +40,9 @@ count_lines:
 	@find ./tests -name '*.py' -exec  wc -l {} \; | sort -n| awk \
         '{printf "%4s %s\n", $$1, $$2}{s+=$$0}END{print s}'
 	@echo ''
+# Launches the streamlit website.
+streamlit:
+	-@streamlit run portfolio-streamlit-lautodrome/app.py
 
 # ----------------------------------
 #      UPLOAD PACKAGE TO PYPI
