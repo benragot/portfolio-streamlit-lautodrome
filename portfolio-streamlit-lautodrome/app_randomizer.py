@@ -1,6 +1,7 @@
 import streamlit as st
 import os
 import random
+
 def app():
     st.title("Randomize painting")
 

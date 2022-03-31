@@ -4,7 +4,7 @@ import os
 def app():
     st.title("Portfolio")
     st.markdown("### *Vous retrouverez ici mes dernières peintures.*")
-
+    #to get all the images of an instagram account: https://chrunos.com/download-all-instagram-photos/
     #getting the names of the images
     images_names = os.listdir('images/portfolio_instagram')
     images_names = [images_name for images_name in images_names if '.jpg' in images_name]
